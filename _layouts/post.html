@@ -10,6 +10,11 @@ notes: active
 			<h2 class="date"><info datetime="{{ page.date }}">
 				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
 			</info></h2>
+			
+			{% for tag in tags }
+				<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+			{% endfor %}
+			
 			<!-- Post content -->
 			<div class="notebody">
 				{{ content }}
