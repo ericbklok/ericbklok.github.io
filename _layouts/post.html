@@ -13,6 +13,7 @@ notes: active
 				</info>
 			</h2>
 			<div class="tag">
+				Tags:
 				{% for tag in page.tags %}
 					<a href="#{{ tag | slugify }}"> {{ tag }} </a>
 				{% endfor %}
