@@ -15,6 +15,10 @@ notes: active
 				<a href="#{{ tag | slugify }}"> {{ tag }} </a>
 			{% endfor %}
 			
+			{% for tag in tags %}
+				{{ tag }}
+			{% endfor %}
+			
 			<!-- Post content -->
 			<div class="notebody">
 				{{ content }}
