@@ -12,13 +12,13 @@ notes: active
 			</info></h2>
 			
 			<div class="test">
-			{{ tags }}
+			{{ page.tags }}
 			{{ date }}
 			{% for tag in tags %}
 				<a href="#{{ tag | slugify }}"> {{ tag }} </a>
 			{% endfor %}
 			
-			{% for tag in tags %}
+			{% for tag in page.tags %}
 				{{ tag }}
 			{% endfor %}
 				
