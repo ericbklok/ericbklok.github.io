@@ -8,18 +8,18 @@ layout: feed
 	<link href="http://chanccm.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://chanccm.github.io/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://chanccm.github.io/blog</id>
+	<id>http://ericbklok.github.io/blog</id>
 	<author>
-		<name>Carmen Chan</name>
-		<email>chanccm@gmail.com</email>
+		<name>Eric Lok</name>
+		<email>ericbklok@gmail.com</email>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://chanccm.github.io{{ post.url }}"/>
+			<link href="http://ericbklok.github.io{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://chanccm.github.io{{ post.id }}</id>
+			<id>http://ericbklok.github.io{{ post.id }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
