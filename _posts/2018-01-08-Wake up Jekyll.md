@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Finally got Jekyll kinda working"
-date: 2018-01-08
+title: "It's alive!"
+date: 2018-01-13
 tags: [web,test]
 ---
 
